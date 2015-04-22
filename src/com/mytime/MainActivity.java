@@ -1,12 +1,9 @@
 package com.mytime;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -44,6 +41,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				Log.i("mytime", "click me add");
+				Intent it = new Intent(MainActivity.this,MyListActivity.class);
+				startActivity(it);
 			}
 		});
 
